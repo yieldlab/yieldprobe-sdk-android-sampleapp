@@ -1,0 +1,301 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSampleApplicationVersion"
+            android:text="QA Application Version:"
+            android:padding="3dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSDKVersion"
+            android:text="SDK Version:"
+            android:padding="3dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtImplementation"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do API calls from (Activity will switch)" />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/chkKotlin"
+                android:text="Kotlin"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/chkJava"
+                android:text="Java"
+                android:padding="3dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorText"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnIsGooglePlayServicesAvailable"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is Google Play Services Available"></Button>
+
+        <Button
+            android:id="@+id/btnInitSDK"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Initialize SDK"></Button>
+
+        <Button
+            android:id="@+id/btnIsInitialized"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Initialized"></Button>
+
+        <CheckBox
+            android:id="@+id/chkGeolocation"
+            android:text="use Geolocation"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chkPersonalizedAds"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:text="use Personalized Ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <Button
+            android:id="@+id/btnSetConfiguration"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Configuration"></Button>
+
+        <Button
+            android:id="@+id/btnGetConfiguration"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Configuration"></Button>
+
+        <Button
+            android:id="@+id/btnGetDeviceMetaData"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Device Meta Data"></Button>
+
+        <TextView
+            android:id="@+id/txtAdslots"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Used Adslots for probe request" />
+
+        <CheckBox
+            android:id="@+id/chkAdslot1"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:text="5220339 (video)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chkAdslot2"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:text="5220336 (728x90 banner)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/chkAdslot3"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:text="6846238 (300x250 banner)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></CheckBox>
+
+        <EditText
+            android:id="@+id/edtAdslot"
+            android:textSize="16sp"
+            android:hint="Add more comma separated adslots here"
+            android:textColor="@color/colorText"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:id="@+id/txtInfo2"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use API with EventBus" />
+
+        <Button
+            android:id="@+id/btnProbeEvents"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probe"></Button>
+
+        <Button
+            android:id="@+id/btnProbeEventsRequestParallel"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probe (three requests in parallel)"></Button>
+
+        <TextView
+            android:id="@+id/txtInfo3"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use API with Futures" />
+
+        <Button
+            android:id="@+id/btnProbeFuture"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probe"></Button>
+
+        <TextView
+            android:id="@+id/txtInfo1"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Ad" />
+
+        <Button
+            android:id="@+id/btnShowTargeting"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Targeting from last request"></Button>
+
+        <Button
+            android:id="@+id/btnShowAd"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Adition Ad"></Button>
+
+        <TextView
+            android:id="@+id/txtPermission"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permissions" />
+
+        <Button
+            android:id="@+id/btnCheckAndRequestPermission"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check and Request Location Permission"></Button>
+
+        <TextView
+            android:id="@+id/txtLogInfo"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log" />
+
+        <TextView
+            android:id="@+id/txtLog"
+            android:padding="3dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Log entries so far." />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
